@@ -11,6 +11,11 @@
 		82A94C0427CF5D5400602DCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A94C0327CF5D5400602DCA /* ContentView.swift */; };
 		82A94C0627CF5D5700602DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A94C0527CF5D5700602DCA /* Assets.xcassets */; };
 		82A94C0927CF5D5700602DCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A94C0827CF5D5700602DCA /* Preview Assets.xcassets */; };
+		82A94C1027CF5E5600602DCA /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A94C0F27CF5E5600602DCA /* ActivityView.swift */; };
+		82A94C1227CF5E6100602DCA /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A94C1127CF5E6100602DCA /* EffectView.swift */; };
+		82A94C1427CF5E6600602DCA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A94C1327CF5E6600602DCA /* ImagePickerView.swift */; };
+		82A94C1827CF5E7500602DCA /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A94C1727CF5E7500602DCA /* PHPickerView.swift */; };
+		82A94C1A27CF5E7B00602DCA /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A94C1927CF5E7B00602DCA /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		82A94C0327CF5D5400602DCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82A94C0527CF5D5700602DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A94C0827CF5D5700602DCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82A94C0F27CF5E5600602DCA /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		82A94C1127CF5E6100602DCA /* EffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
+		82A94C1327CF5E6600602DCA /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		82A94C1727CF5E7500602DCA /* PHPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
+		82A94C1927CF5E7B00602DCA /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		82A94C1B27CF630400602DCA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +62,16 @@
 		82A94C0027CF5D5400602DCA /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				82A94C0F27CF5E5600602DCA /* ActivityView.swift */,
 				82A94C0127CF5D5400602DCA /* CameraAppApp.swift */,
 				82A94C0327CF5D5400602DCA /* ContentView.swift */,
+				82A94C1127CF5E6100602DCA /* EffectView.swift */,
+				82A94C1327CF5E6600602DCA /* ImagePickerView.swift */,
+				82A94C1727CF5E7500602DCA /* PHPickerView.swift */,
+				82A94C1927CF5E7B00602DCA /* UIImageExtension.swift */,
 				82A94C0527CF5D5700602DCA /* Assets.xcassets */,
 				82A94C0727CF5D5700602DCA /* Preview Content */,
+				82A94C1B27CF630400602DCA /* README.md */,
 			);
 			path = CameraApp;
 			sourceTree = "<group>";
@@ -139,6 +156,11 @@
 			files = (
 				82A94C0427CF5D5400602DCA /* ContentView.swift in Sources */,
 				82A94C0227CF5D5400602DCA /* CameraAppApp.swift in Sources */,
+				82A94C1A27CF5E7B00602DCA /* UIImageExtension.swift in Sources */,
+				82A94C1827CF5E7500602DCA /* PHPickerView.swift in Sources */,
+				82A94C1027CF5E5600602DCA /* ActivityView.swift in Sources */,
+				82A94C1227CF5E6100602DCA /* EffectView.swift in Sources */,
+				82A94C1427CF5E6600602DCA /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +294,7 @@
 				DEVELOPMENT_TEAM = LMRPTB55TZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影するためにカメラを利用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,7 +305,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.mi.oura.CameraApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthem.mi.Cameraapp89;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,6 +324,7 @@
 				DEVELOPMENT_TEAM = LMRPTB55TZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影するためにカメラを利用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.mi.oura.CameraApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthem.mi.Cameraapp89;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
